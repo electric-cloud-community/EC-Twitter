@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <key>@PLUGIN_KEY@</key>
+    <version>@PLUGIN_VERSION@</version>
+    <label>@PLUGIN_KEY@</label>
+    <description>Updates the status on twitter</description>
+    <category>Notification</category>
+    <author>Electric Cloud</author>
+    <authorUrl>http://www.electric-cloud.com/support</authorUrl>
+    <help>@PLUGIN_KEY@_help.xml</help>
+    <commander-version min="3.6"/>
+    <components>
+        <component name="configure">
+            <javascript>war/com.electriccloud.commander.plugins.@PLUGIN_KEY@.Configure/com.electriccloud.commander.plugins.@PLUGIN_KEY@.Configure.nocache.js</javascript>
+        </component>
+    </components>
+</plugin>

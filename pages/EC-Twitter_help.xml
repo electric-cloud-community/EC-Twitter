@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="generator"
+          content="HTML Tidy for Windows (vers 14 February 2006), see www.w3.org" />
+    <meta content="text/html; charset=us-ascii"
+          http-equiv="content-type" />
+
+    <title>ElectricFlow Plugin for Twitter</title>
+    <link rel="stylesheet" href= "../../plugins/@PLUGIN_KEY@/pluginhelp.css" type="text/css" media= "screen" />
+</head>
+
+<body>
+    <div class="help">
+    <h1>Twitter</h1>
+    <p>Plugin Version @PLUGIN_VERSION@</p>
+    <hr style="margin-left: -10px; margin-top: 10px; height: 1px; width: 100%; color: #5981BD;" noshade="noshade" />
+
+    <p>Twitter is an online social networking service and
+    microblogging service that enables its users to send and read
+    text-based posts of up to 140 characters.</p>
+
+    <h2>Twitter Links</h2>
+
+    <p>More information can be found at
+    <a href="https://twitter.com/">this website</a>.</p>
+
+    <h2>ElectricFlow Integration to Twitter</h2>
+
+    <p>The plugin calls the Electric Cloud tool's "EC-Twitter"
+    command line and passes the user-provided parameters.<br />
+     <b>Note:</b> Before you run the application from commander you
+    need to authorize the EC-Twitter application, to do this follow
+    the next steps:</p>
+
+    <ol>
+        <li>Download the command line application <a href="../../plugins/@PLUGIN_KEY@/files/app.rar">Here</a> .</li>
+
+        <li>Execute java -jar EC-Twitter.jar "test message".</li>
+
+        <li>The application will open a browser and will show you
+        an authorization code.</li>
+
+        <li>Copy that code, and paste it into the console.</li>
+
+        <li>Now you should see this message: "The tweet was tweeted
+        successfully".</li>
+
+        <li>The application is ready to use from Commander.</li>
+    </ol><br />
+     <br />
+     
+
+    <h2>Integrated Version</h2>
+
+    <p>This plugin was developed and tested against version
+    1.0.0</p>
+
+    <h1>Plugin Procedures</h1>
+
+    <p>
+        IMPORTANT: For all parameter descriptions below, required
+        parameters are shown in <span class='required'>bold
+        italics</span>.
+    </p>
+
+    <div class="procedure"
+         id="UpdateStatus">
+        <a name='UpdateStatus'
+             id="UpdateStatus"></a> 
+
+        <h3>UpdateStatus</h3>
+
+        <p>This procedure allows you to update the status for a
+        twitter account.</p> 
+
+        <table class="grid">
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+
+                    <th>Description</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class='required'>Path to Java</td>
+
+                    <td>Provide the absolute path to the current
+                    java.exe. Default is java, which assumes the
+                    path is properly loaded in the environment.
+                    (Required).</td>
+                </tr>
+
+                <tr>
+                    <td class='required'>Path to
+                    EC-Twitter.jar</td>
+
+                    <td>Absolute path to the Twitter command line
+                    tool. (Required).</td>
+                </tr>
+
+                <tr>
+                    <td class='required'>Message</td>
+
+                    <td>The message you want to tweet on twitter.
+                    (Required).</td>
+                </tr>
+
+                <tr>
+                    <td>Configuration file</td>
+
+                    <td>Absolute path to the EC-Twitter's config
+                    file</td>
+                </tr>
+            </tbody>
+        </table><img src="../../plugins/@PLUGIN_KEY@/images/Twitter-2.png"
+             alt="Form" />
+    </div>
+
+    <h1>Examples and Use Cases</h1>
+
+    <ol>
+        <li>The first thing we need to do is to authorize the
+        console application<br />
+         <img src="../../plugins/@PLUGIN_KEY@/images/Twitter-5.png"
+             alt="authorize" /></li>
+
+        <li>Copy the code that will appear in the web
+        browser:<br />
+         <img src="../../plugins/@PLUGIN_KEY@/images/Twitter-6.png"
+             alt="code" /></li>
+
+        <li>Paste it in the console app and press enter, the
+        application will store the key values and that's why you
+        will have to do this only once.<br />
+         <img src="../../plugins/@PLUGIN_KEY@/images/Twitter-7.png"
+             alt="code" /></li>
+
+        <li>Now you will see the posted message:<br />
+         <img src="../../plugins/@PLUGIN_KEY@/images/Twitter-8.png"
+             alt="code" /></li>
+
+        <li>Then we should create a step for twitter:<br />
+         <img src="../../plugins/@PLUGIN_KEY@/images/Twitter-1.png"
+             alt="code" /></li>
+
+        <li>Fill the parameter panel:<br />
+         <img src="../../plugins/@PLUGIN_KEY@/images/Twitter-2.png"
+             alt="code" /></li>
+
+        <li>And finaly execute the procedure:<br />
+         <img src="../../plugins/@PLUGIN_KEY@/images/Twitter-3.png"
+             alt="code" /><br />
+         <img src="../../plugins/@PLUGIN_KEY@/images/Twitter-4.png"
+             alt="code" /></li>
+    </ol>
+
+    <h1>Release Notes</h1>
+
+    <h2>@PLUGIN_KEY@-1.0.1</h2>
+
+    <ul>
+        <li>Procedure name(s) were changed in the step picker section</li>
+    </ul>
+    
+    <h2>@PLUGIN_KEY@-1.0.0</h2>
+
+    <ul>
+        <li>Update status procedure</li>
+    </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<editor>
+    <help>/commander/pages/@PLUGIN_NAME@/@PLUGIN_KEY@_help?s=Administration&amp;ss=Plugins#UpdateStatus</help>
+    <formElement>
+        <label>Path to Java</label>
+        <property>JavaPath</property>
+        <value>java</value>
+        <documentation>Provide the absolute path to the current java.exe. Default is java, which assumes the path is properly loaded in the environment.</documentation>
+        <required>1</required>
+        <type>entry</type>
+    </formElement>
+    <formElement>
+        <label>Path to EC-Twitter.jar</label>
+        <property>CommandLineTool</property>
+        <documentation>Absolute path to the Twitter command line tool.</documentation>
+        <required>1</required>
+        <type>entry</type>
+    </formElement>
+    <formElement>
+        <label>Message.</label>
+        <property>Message</property>
+        <value/>
+        <documentation>The message you want to tweet on twitter.</documentation>
+        <required>1</required>
+        <type>textarea</type>
+    </formElement>
+    <formElement>
+        <label>Configuration file</label>
+        <property>ConfigFile</property>
+        <value/>
+        <documentation>Absolute path to the EC-Twitter's config file</documentation>
+        <required>0</required>
+        <type>entry</type>
+    </formElement>
+</editor>
