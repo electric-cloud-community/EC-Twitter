@@ -1,0 +1,15 @@
+<?xml version='1.0' standalone='yes'?>
+<fileset>
+  <file>
+    <path>TwitterDriver.pl</path>
+    <xpath>//property[propertyName=&quot;TwitterDriver&quot;]/value</xpath>
+  </file>
+  <file>
+    <path>forms/UpdateStatus.xml</path>
+    <xpath>//procedure[procedureName=&quot;UpdateStatus&quot;]/propertySheet/property[propertyName=&quot;ec_parameterForm&quot;]/value</xpath>
+  </file>
+  <file>
+    <path>ec_setup.pl</path>
+    <xpath>//property[propertyName=&quot;ec_setup&quot;]/value</xpath>
+  </file>
+</fileset>
