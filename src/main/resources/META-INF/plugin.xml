@@ -5,6 +5,7 @@
     <label>@PLUGIN_KEY@</label>
     <description>Updates the status on twitter</description>
     <category>Notification</category>
+    <ecSupportLevel>10</ecSupportLevel>
     <author>Electric Cloud</author>
     <authorUrl>http://www.electric-cloud.com/support</authorUrl>
     <help>@PLUGIN_KEY@_help.xml</help>
